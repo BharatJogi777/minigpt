@@ -7,7 +7,7 @@ def load_corpus(path):
     if len(text) < 2: raise ValueError("Corpus must contain at least two characters")
     return text
 
-def split_encoded_data(text, tokenizer, train_fraction=0.9):
+def split_encoded_data(text, tokenizer, train_fraction=0.8):
     if not 0 < train_fraction < 1: raise ValueError("train_fraction must be between 0 and 1")
     tokens = torch.tensor(tokenizer.encode(text), dtype=torch.long)
     split = int(len(tokens) * train_fraction)
