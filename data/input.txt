@@ -1,0 +1,11 @@
+MiniGPT is a small language model built for learning.
+A language model predicts the next token from the tokens that came before it.
+A token can be a character, a word, or a subword unit.
+The transformer uses attention to combine information from earlier positions.
+Causal attention prevents a position from looking at future tokens.
+Training adjusts model parameters to reduce the next token prediction loss.
+The model begins with random parameters and learns patterns from examples.
+A small model trained on a tiny dataset has limited ability.
+Good experiments use clean data, repeatable settings, and careful evaluation.
+Python is a useful language for machine learning research and engineering.
+PyTorch provides tensors, automatic differentiation, and neural network modules.
